@@ -15,7 +15,7 @@ cnt  = 0;
 
 arr = [500, 100, 50, 10]; #큰 단위부터 작은 단위로 구하는 최적의 해
 
-for coin in arr:
+for coin in arr: #화폐의 종류가 K라고 할 때, 소스코드의 시간 복잡도는 O(K)이다.
     cnt += n // coin;
     n %= coin;
 print("n을 동전으로 거슬러 줄 수 있는 동전 개수",cnt);
