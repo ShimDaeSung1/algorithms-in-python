@@ -1,15 +1,13 @@
 import sys
-input = sys.stdin.readline
+def input():
+    return sys.stdin.readline().rstrip()
 
-n = int(input())
+N = int(input())
 arr = list(map(int, input().split()))
-len = sum(arr)
 arr.sort()
-cost = 0
+len = sum(arr)
+total = 0
 for i in arr:
-  len -= i
-  cost += len*i
-
-print(cost)
-
-
+    len = len - i
+    total += i * len
+print(total)
