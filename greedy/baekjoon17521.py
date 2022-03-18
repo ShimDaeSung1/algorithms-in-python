@@ -3,7 +3,7 @@ input = sys.stdin.readline
 
 #n은 요일 수, w는 초기현금
 n, w = map(int, input().split())
-
+#극점에서 사거나 팔아주면 끝
 money = w
 coin = 0
 arr = []
