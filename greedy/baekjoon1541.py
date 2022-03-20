@@ -24,8 +24,14 @@ sum = 0
 
 for i in arr[0].split('+'):
     sum+=int(i)
+<<<<<<< HEAD
 for i in arr[1:].split('+'):
     sum-=int(i)
+=======
+for i in arr[1:]:
+    for j in i.split('+'):
+        sum-=int(j)
+>>>>>>> ed52483fb28732470dfdeec3dc56f278ab009800
 
 print(sum)
 
