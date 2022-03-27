@@ -2,8 +2,8 @@ import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-A = [list(map(int,list(input()))) for _ in range(N)]
-B = [list(map(int,list(input()))) for _ in range(N)]
+A = [list(map(int, input().rstrip())) for j in range(N)]
+B = [list(map(int, input().rstrip())) for j in range(N)]
 
 def change(x, y):
     for i in range(x, x+3):
