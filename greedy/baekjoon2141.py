@@ -26,6 +26,7 @@ while left <= right:
         answer = mid
     else:
         left = mid + 1
+        answer =mid
 
 arr.sort()
 # bisect_left(a,x)는 정렬된 a에 x를 삽입할 위치를 리턴, x가 a에 이미 있으면 기존 항목의 앞(왼쪽)의 위치 반환
