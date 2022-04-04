@@ -1,23 +1,39 @@
 import sys
 input = sys.stdin.readline
 
+# 시작 높이
 N = int(input())
-h = list(map(int,input().split()))
+#5
+
+# 풍선의 높이
+H = list(map(int, input().split()))
+# 2 1 5 4 3
+
+arr = [[int(0) for col in range(5)] for row in range(5)]
+
+# for i in range(len(arr)):
+#     for j in range(len(arr[i])):
+#         print(arr[i][j], end= ' ')
+#     print()
 
 
+for i in range(len(H)):
 
-# 높이별 화살 갯수, 0층 ~ N층 까지 있기 때문에 N+1개 / 1층에 풍선 있을 경우 1층 풍선 맞으면 화살은 0층으로 떨어짐
-cnt = [0]*1000001
-
-for i in h:
-    if cnt[i] > 0 :
-        cnt[i] -= 1
-        cnt[i-1] += 1
-    elif cnt[i] ==0:
-        cnt[i-1] += 1
-    else:
-        print('-1')
-        sys.exit()
-print(sum(cnt))
+    arr[len(H)-H[i]][i] = H[i]
 
 
+for i in range(len(arr)):
+    for j in range(len(arr[i])):
+        print(arr[i][j], end= ' ')
+    print()
+
+arrow = 1
+
+for i in range(5-N, -1):
+    for j in range(len(arr[i])):
+        if arr[i][j]>0:
+            arr[i][j]=0
+            # 0으로 바꿔준 후 j는 그대로, i는 하나 내려주고 돌아야함, 작성
+            break
+    
+print(arrow)
