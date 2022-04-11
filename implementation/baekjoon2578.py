@@ -71,3 +71,4 @@ for _ in range(5):
         break
 
 
+# 딕셔너리 사용 예제
