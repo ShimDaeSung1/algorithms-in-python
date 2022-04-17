@@ -7,7 +7,7 @@ after_shufle = list(map(int,input().split()))
 D = list(map(int, input().split()))
 
 # D규칙에따라 거꾸로 보내면 끝.
-# 섞은만큼 거꾸로
+# 섞은만큼 거꾸로 
 for _ in range(K):
     P = [0]*N
     for i in range(N):
