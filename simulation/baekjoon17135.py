@@ -54,7 +54,7 @@ def attack_enemy(archer_case_index):
                 if arr[i][j] == 1:
                     diff = abs(n-i) + abs(archer_pos-j)
                     if diff <= d:
-                        # 왼쪽부터 잡아야하므로 열인 j가 두번쨰로 옴
+                        # 왼쪽부터 잡아야하므로 열인 j가 두번째로 옴
                         heappush(pq, [diff, j, i])
 
         if pq:  
