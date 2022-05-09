@@ -1,7 +1,5 @@
-
-from glob import glob
-from heapq import heappop, heappush
 from itertools import combinations
+from heapq import heappop, heappush
 import sys
 input = lambda:sys.stdin.readline().strip()
 
@@ -35,10 +33,11 @@ answer = 0
 def get_enemy_count():
     global arr
     cnt = 0
-
+    
     for i in range(n):
         for j in range(m):
             if arr[i][j] == 1: cnt += 1
+    
     return cnt
 
 def attack_enemy(archer_case_index):
@@ -48,26 +47,26 @@ def attack_enemy(archer_case_index):
     cnt = 0
 
     for archer_pos in archer_cases[archer_case_index]:
-        pq = [] # [거리,x,y]를 우선순위 큐에 삽입
+        pq = [] # [거리, x, y]를 우선순위 큐에 삽입
 
         for i in range(n-1, -1, -1):
             for j in range(m):
                 if arr[i][j] == 1:
                     diff = abs(n-i) + abs(archer_pos-j)
                     if diff <= d:
-                        # 왼쪽부터 잡아야하므로 열인 j가 두번째로 옴
+                        # 왼쪽부터 잡아야하므로 열인 j가 두번쨰로 옴
                         heappush(pq, [diff, j, i])
-        
-        if pq:
-            # 열인 j를 x로 받았으므로
+
+        if pq:  
             _, x, y = heappop(pq)
-            # y와 x를 바꿔서 저장
             remove_list.append([y, x])
+    
     for y, x in remove_list:
         if not attacked[y][x]:
             attacked[y][x] = True
             cnt += 1
             arr[y][x] = 0
+    
     return cnt
 
 def move_enemy():
@@ -76,6 +75,7 @@ def move_enemy():
 
     for i in range(-1, -n, -1):
         arr[i] = arr[i-1]
+    
     arr[0] = [0 for _ in range(m)]
 
 def simulation(archer_case_index):
@@ -84,15 +84,15 @@ def simulation(archer_case_index):
     while get_enemy_count() != 0:
         cnt += attack_enemy(archer_case_index)
         move_enemy()
-    
+        
     return cnt
 
 for i in range(len(archer_cases)):
-    arr = [[MAP[i][j] for j in range(m)] for i in range(m)]
+    arr = [[MAP[i][j] for j in range(m)] for i in range(n)]
     cnt = simulation(i)
-    if answer < cnt : answer = cnt
-print(answer)
+    if answer < cnt: answer = cnt
 
+print(answer)
 
 
 
