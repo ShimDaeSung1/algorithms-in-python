@@ -102,7 +102,7 @@ def check_light_area():
                 remove('blue',5)
                 break
 
-# n번 만큼 블록을 놓을거야!!
+# n번 만큼 블록을 놓는다
 n = int(input())
 answer = 0
 for _ in range(n):
