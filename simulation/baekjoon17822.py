@@ -2,7 +2,7 @@ from collections import deque
 import statistics
 
 
-#인접한 방향 동서남북, 그리고 범위 벗어날 시 첫번째-마지막 이어줌
+#인접한 방향 동서남북, 그리고 범위 벗어날 시 첫번째-마지막 이어줌.
 dx = [-1,0,1,0]
 dy = [0,1,0,-1]
 
