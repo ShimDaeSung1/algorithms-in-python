@@ -11,8 +11,7 @@ def survive_land(x, y, data_map):
 
 r,c = map(int, input().split())
 
-# 바다 1
-# 땅 0
+# 바다 1, 땅 0
 # 지도와 지도 바깥부분도 바다로 감싸준다.
 data_map = [[1]*(c+2) for i in range(r+2)]
 
