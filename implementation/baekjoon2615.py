@@ -10,7 +10,7 @@ for i in range(19):
 # 방향을 (→ ↓ ↘ ↗)로 설정했다.
 dx = [0, 1, 1, -1]
 dy = [1, 0, 1, 1]
-
+#I love you so much babe❤️❤️❤️❤️
 for x in range(19):
     for y in range(19):
         if board[x][y] != 0 :
