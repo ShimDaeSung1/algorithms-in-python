@@ -5,7 +5,7 @@ input = lambda:sys.stdin.readline().strip()
 circle = [deque(map(int, input())) for _ in range(4)]
 opers = deque(list(map(int, input().split())) for _ in range(int(input())))
 
-while opers: #명령어가 남아있으면 반복문 실행
+while opers: #명령어가 남아있으면 반복문 실행.
     num, direct = opers.popleft()
     num -= 1 #톱니바퀴는 1부터4, 실제 인덱스는 0부터 3이므로 -1
     tmp_2 = circle[num][2] # 비교 대상
