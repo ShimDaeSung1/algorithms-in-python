@@ -8,7 +8,7 @@ def distance(x):
         distance += abs(i-x)*j
     return distance
 
-N = int(input())
+N = int(input()) 
 arr = [tuple(map(int, input().split()))for _ in range(N)]
 
 right = 1000000000
