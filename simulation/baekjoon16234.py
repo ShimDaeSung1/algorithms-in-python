@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 from collections import deque
 
-graph = []
+graph = []     
 n,l,r = map(int,input().split())
 for _ in range(n):
     graph.append(list(map(int,input().split())))
