@@ -1,7 +1,7 @@
 n, k = map(int, input().split())
 Ai = list(map(int, input().split()))
 
-dp = [False]*n
+dp = [False]*n    
 dp[0] = True
 for i in range(1, len(Ai)):
     for j in range(i):
