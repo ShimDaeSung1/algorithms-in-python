@@ -56,3 +56,4 @@ def dfs(depth, arr):
 min_value = int(1e9)
 dfs(0, graph)
 print(min_value)
+   
