@@ -5,7 +5,7 @@ L, R = input().split()
 li = list(input().rstrip())
 
 keyboard = ['qwertyuiop','asdfghjkl','zxcvbnm']
-location = dict()
+location = dict()  
 
 for x in range(3):
     for y in range(len(keyboard[x])):
