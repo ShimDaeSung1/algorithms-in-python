@@ -9,3 +9,5 @@ X = X.replace("XX", "BB")
 if X.count('X') >= 1:
   X = -1
 print(X)
+
+
