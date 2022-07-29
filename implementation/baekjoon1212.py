@@ -5,4 +5,4 @@ input = sys.stdin.readline
 a = int(input(), 8) #,를찍고 숫자를 입력하면 그 진법으로 숫자를 받는다는 것을 의미
 # bin 함수는 2진수로 변경하는 함수, 10진수 int를 str로 변경 후 접두어 2개 떼고 출력
 b = bin(a)[2:] #변환 이후에는 맨 앞 2자리에 이진법을 의미하는 0b가 붙기 때문에 2자리부터 출력
-print(b)
+print(b)    
