@@ -49,4 +49,4 @@ for i in range(100):
         if graph[i][j] == 1 and graph[i + 1][j] == 1 and graph[i][j + 1] == 1 and graph[i + 1][j + 1] == 1:
             answer += 1
 
-print(answer)
+print(answer)       
