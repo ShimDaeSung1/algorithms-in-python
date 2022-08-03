@@ -45,5 +45,5 @@ for i in range(101):
 # for-else : for문이 중간에 break 등으로 끊기지 않고, 끝까지 수행 되었을 때 수행하는 코드
 else:
     print(-1)
-
+         
 
