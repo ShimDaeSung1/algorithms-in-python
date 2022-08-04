@@ -31,7 +31,7 @@ for i in command:
      # 원판에 수가 있을 경우
     temp_num = 0
     for num in board:
-        temp_num += sum(num)
+        temp_num += sum(num)      
     if temp_num == 0:
         break
     visited = [[0] * (m) for _ in range(n+1)]
