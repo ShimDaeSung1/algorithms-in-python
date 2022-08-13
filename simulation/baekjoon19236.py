@@ -54,5 +54,5 @@ def dfs(sx, sy, score, board):
         if(0<=nx<4 and 0<=ny<4) and board[nx][ny][0] > 0:
             dfs(nx, ny, score, copy.deepcopy(board))
 
-dfs(0, 0, 0, board)
+dfs(0, 0, 0, board)     
 print(max_score)
