@@ -14,7 +14,7 @@ mode = [
 # 북, 동, 남, 서.
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
-
+      
 for i in range(n):
     data = list(map(int, input().split()))
     graph.append(data)
