@@ -10,3 +10,6 @@ if n > 1 :
 for i in range(3, n+1):
     dp.append(max(dp[i-1], dp[i-3]+glass[i]+glass[i-1], dp[i-2]+glass[i]))
 print(max(dp))
+
+
+
