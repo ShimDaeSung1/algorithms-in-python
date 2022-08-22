@@ -13,6 +13,8 @@ for i in range(n):
         sum += arr[i]
 print(sum)
     
+
+
     
 
 
