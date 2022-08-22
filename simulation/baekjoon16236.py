@@ -57,3 +57,7 @@ while fish_cnt:
         eat_cnt = 0
     board[shark_x][shark_y] = 0
 print(time)
+
+
+
+
