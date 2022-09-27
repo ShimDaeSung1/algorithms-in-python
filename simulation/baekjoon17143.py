@@ -65,3 +65,9 @@ for i in range(c):
     # 상어 이동
     board = move()
 print(answer)
+
+
+
+
+
+

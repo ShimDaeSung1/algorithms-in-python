@@ -116,3 +116,6 @@ for i in range(n):
     for j in range(n):
         cnt += len(t[i][j])
 print(cnt)
+
+
+

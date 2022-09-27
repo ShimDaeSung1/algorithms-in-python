@@ -40,3 +40,9 @@ elif money_seong < money_joon:
     print("BNP")
 else:
     print("SAMESAME")
+
+
+
+
+
+

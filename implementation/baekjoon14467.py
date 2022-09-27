@@ -14,3 +14,7 @@ for num, position in cow :
             count+=1
             cow_po[num] = position
 print(count)
+
+
+
+
