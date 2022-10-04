@@ -24,7 +24,7 @@ def bfs(graph, cnt):
                         if 0<=a<M and 0<=b<N and graph[a][b] == 1:
                             graph[a][b] = 0
                             queue.append([a,b])
-    return cnt-1
+    return cnt
 
 answer = []
 for _ in range(T):
