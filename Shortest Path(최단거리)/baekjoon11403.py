@@ -11,7 +11,7 @@ def floyd_warshall():
     for i in range(len(graph)):
         for j in range(len(graph[i])):
             distance[i+1][j+1] = graph[i][j]
-    
+    #모든 중간 노드를 거치므로 결국 모든 노드에서 모든 노드를 가게 된다.
     for k in range(1, N+1): #중간 노드(거치는 점)
         for i in range(1,N+1): #시작점
             for j in range(1,N+1): #끝나는점
