@@ -2,6 +2,8 @@ import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10**6)
 
+# 이 문제는 조합(C) 문제
+
 n, m = map(int, input().split())
 arr = list(map(int, input().split()))
 arr.sort()
