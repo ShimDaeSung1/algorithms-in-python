@@ -1,37 +1,26 @@
 import sys, math
 input = sys.stdin.readline
 
-k = int(input())
+n = int(input())
+
 def divide_and_conquer(n,k):
 
-    num = math.log(k,2)
-    # 2의 제곱으로 나누어 떨어질경우
+    if n == 1:
+        print(k)
+        exit()
+    
+    num = math.log(n,2)
+
     if num == int(num):
-        if n == 0:
-            print(int(num%2))
+        if num % 2 == 0:
+            print(k)
             exit()
-        if n == 1:
-            print(int(num%2)+1)
+        else:
+            print(1-k)
             exit()
-    
-    # 떨어지지 않으면 
-    a = k-(2**int(num))
-    b = 0
-    #시작하는 숫자를 n으로 주기
-    if int(num) % 2 == 0:
-        b = 0
-    else : 
-        b = 1
 
-    divide_and_conquer(b, a)
+    else:
+        num = int(num)
+    divide_and_conquer(n-2**num, 1-k)
 
-divide_and_conquer(0,k)
-
-    
-
-
-
-    
-
-
-        
+divide_and_conquer(n,0)
